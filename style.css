@@ -1,4 +1,8 @@
-div.info-header {
+div.info-header, div.info-content {
+    margin-left: 10px;
+}
+
+div.info-header, div.info-content {
     margin-left: 10px;
 }
 

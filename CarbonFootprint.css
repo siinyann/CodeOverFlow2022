@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('images/wave_background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+h1 {
+    margin: 100px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+div#calculator {
+    padding: 20px;
+    border-radius: 10%;
+    margin: 0 auto;
+    width: clamp(300px, 60%, 600px);
+    aspect-ratio: 16/10;
+    background-color: whitesmoke;
+    opacity: 50%;
+}
+
+div#calculator p {
+    width: 80%;
+}
+
+div#left-arrow{
+    border: solid whitesmoke 1px;
+    margin: auto 0;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    float:left;
+    opacity: 50%;
+    padding: 5px;
+}
+
+div#right-arrow{
+    border: solid whitesmoke 1px;
+    margin: auto 0;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    float:right;
+    opacity: 50%;
+    padding: 5px;
+}
+
+div#right-arrow:hover, div#left-arrow:hover {
+    background-color: whitesmoke;
+}
+
+.arrow {
+    height: 40px;
+    width: 40px;
+}

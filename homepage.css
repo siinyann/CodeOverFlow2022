@@ -1,8 +1,26 @@
-/* .background-image{
-    background-image: ;
-} */
+.background-image{
+    
+    margin-top: -25px;
+    z-index: -2;
+    position: relative;
+    text-align: center;
+    color: white;
+}   
+.img1{
+    filter: brightness(50%);
+}
+nav{
+    background-color: inherit;
+}
+.img-text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    
+    font-size: 320%;
+}
+    img.logo {
+        width: 75px;
+        height: 75px;
 
-img.logo {
-    width: 75px;
-    height: 75px;
 }

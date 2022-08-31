@@ -16,11 +16,12 @@ nav{
     position: absolute;
     top: 20%;
     left: 50%;
-    
     font-size: 320%;
+    text-align: center;
 }
-    img.logo {
-        width: 75px;
-        height: 75px;
+
+img.logo {
+    width: 75px;
+    height: 75px;
 
 }

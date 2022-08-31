@@ -95,7 +95,6 @@ function result() {
         }
     }
     for (const [key, value] of Object.entries(calcData)) {
-        console.log(`${key}: ${value}`);
         if (value==''){
             alert('Please fill in all the parts')
             return

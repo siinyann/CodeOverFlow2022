@@ -6,6 +6,7 @@
 
 body{
     text-align: center;
+    max-height: 2000px;
 }
 
 
@@ -30,10 +31,6 @@ div#calculator {
 
 #container {
     display: none;
-}
-
-div#calculator p {
-    width: 80%;
 }
 
 div#left-arrow{
@@ -68,8 +65,52 @@ div#right-arrow:hover, div#left-arrow:hover {
     width: 40px;
 }
 
-h4 {
+div#calculator h4 {
     display:block;
     margin: 30px;
+    font-weight: bold;
+}
+
+hr {
+    margin: 10px auto;
+    border: 1px solid #198754;
+    width: 80%;
+}
+
+div#result h1 {
+    margin: 0;
+    color: #198754;
+    font-weight: bold;
+}
+
+div#result h4{
+    color: #2c3e50;
+    margin: 20px auto;
+}
+
+div.result {
+    display: none;
+}
+
+div.result.show {
+    display: block;
+    animation: growDown 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+
+@keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+span {
+    color: #198754;
     font-weight: bold;
 }

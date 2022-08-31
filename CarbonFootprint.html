@@ -23,7 +23,6 @@
     ></script>
     <link rel="stylesheet" href="CarbonFootprint.css" />
     <title>Carbon Footprint Calculator</title>
-    <link rel="stylesheet" href="homepage.css" />
     <script src="calculator.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.3.1.js"
@@ -43,7 +42,7 @@
       class="navbar navbar-expand-lg navbar-light bg-light"
     ></nav>
 
-    <h1 class="info-header">Carbon Footprint calculator</h1>
+    <h1 class="info-header">Carbon Footprint Calculator</h1>
     <div id="container">
       <div class="d-flex flex-wrap flex-row align-content-sm-around">
           <div id="left-arrow" onclick="prev()">
@@ -51,21 +50,73 @@
           </div>
           <div id="calculator">
             <div class="qn">
-              <h4 class="text-success">1. What is your electric bill?</h4>
-              <input type="number" class="form-control" id="electric_bill">
+              <h4 class="text-success">1. What is your monthly electric bill?</h4>
+              <input type="number" class="form-control data" name="Electric">
             </div>
-            <div class="qn">2</div>
-            <div class="qn">3</div>
-            <div class="qn">4</div>
-            <div class="qn">5</div>
-            <div class="qn">6</div>
-            <div class="qn">7</div>
-            <div class="qn">8</div>             
+            <div class="qn">
+              <h4 class="text-success">2. What is your monthly gas bill?</h4>
+              <input type="number" class="form-control data" name="Gas">
+            </div>
+            <div class="qn">
+              <h4 class="text-success">3. What is your monthly oil bill?</h4>
+              <input type="number" class="form-control data" name="Oil">
+            </div>
+            <div class="qn">
+              <h4 class="text-success">4. What is your monthly mileage of your car?</h4>
+              <input type="number" class="form-control data" name="Mileage">
+            </div>
+            <div class="qn">
+              <h4 class="text-success">5. What is the number of flights you've taken in the past years?</h4>
+              <input type="number" class="form-control data" name="Flights">
+              <p>Is the number of hours of total flight more than 4hours?</p>
+              <label class="form-check-label">Yes
+                <input class="form-check-input" onclick="getValue(this)" type="radio" name="Hours" value="yes">
+              </label>
+              <label class="form-check-label">No
+                <input class="form-check-input" onclick="getValue(this)" type="radio" name="Hours" value="no">
+              </label>
+            </div>
+            <div class="qn">
+              <h4 class="text-success">6. Do you recycle newspaper?</h4>
+              <label class="form-check-label">Yes
+                <input class="form-check-input" onclick="getValue(this)" type="radio" name="Newspaper" value="yes">
+              </label>
+              <label class="form-check-label">No
+                <input class="form-check-input" onclick="getValue(this)" type="radio" name="Newspaper" value="no">
+              </label>
+            </div>
+            <div class="qn">
+              <h4 class="text-success">7. Do you recycle aluminum and tin?</h4>
+              <label class="form-check-label">Yes
+                <input class="form-check-input" onclick="getValue(this)" type="radio" name="Metal" value="yes">
+              </label>
+              <label class="form-check-label">No
+                <input class="form-check-input" onclick="getValue(this)" type="radio" name="Metal" value="no">
+              </label>
+            </div>
+            <div class="qn">
+              <button type="button" class="btn btn-outline-success" id="showresult" onclick="result()">View your result</button>
+            </div>             
           </div>
           <div id="right-arrow" onclick="next()">
               <svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 448c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L178.8 256L41.38 118.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25l-160 160C80.38 444.9 72.19 448 64 448z"/></svg>
           </div>
       </div>
+    </div>
+    <div id="result" class="result">
+      <hr>
+        <h1>Results</h1>
+        <h4>Your carbon footprint is: <span id="carbonfootprint"></span>tonnes</h4>
+        <h4>Your carbon footprint is <span id="compare"></span> by <span id="value"></span>tonnes 
+          <br>
+          compared to the ideal carbon footprint
+        </h4>
+        <h4 id="good">Keep up your good work with your sustainably carbon footprint!</h4>
+        <h4 id="bad">Donate SGD<span id="price"></span> if you want to offset your carbon footprint</h4>
+        <a href="donation.html">
+          <button type="button" class="btn btn-outline-success">Donate</button>
+        </a>
+      <hr>
     </div>
     <button
       id="start"
@@ -78,7 +129,5 @@
     <!-- Footer -->
     <section id="footer" class="footer"></section>
     <script src="script.js"></script>
-    <script>includeHTML()</script>
-    
   </body>
 </html>

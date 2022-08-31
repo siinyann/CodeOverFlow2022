@@ -61,3 +61,8 @@ div#right-arrow:hover, div#left-arrow:hover {
     height: 40px;
     width: 40px;
 }
+
+img.logo {
+    width: 75px;
+    height: 75px;
+}

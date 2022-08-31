@@ -12,11 +12,29 @@ var calcData = {"Electric":"",
                 "Newspaper":"",
                 "Metal":""};
 
+function hidearrow() {
+    if(counter==1){
+        document.getElementById('left-arrow').style.visibility = 'hidden';
+    }
+    else if(counter==8){
+        document.getElementById('right-arrow').style.visibility = 'hidden';
+    }
+    else if(counter==9){
+        document.getElementById('right-arrow').style.visibility = 'hidden';
+        document.getElementById('left-arrow').style.visibility = 'hidden';
+    }
+    else{
+        document.getElementById('right-arrow').style.visibility = 'visible';
+        document.getElementById('left-arrow').style.visibility= 'visible';
+    }
+}
+
 function next() {
     counter++;
-    if (counter > 8){
-        counter = 8;
+    if (counter > 9){
+        counter = 9;
     }
+    hidearrow();
     display_qn();
 }
 
@@ -25,6 +43,7 @@ function prev() {
     if (counter < 1){
         counter = 1;
     }
+    hidearrow();
     display_qn();
 }
 
@@ -75,9 +94,17 @@ function result() {
             calcData.Flights = data[i].value;
         }
     }
+    for (const [key, value] of Object.entries(calcData)) {
+        console.log(`${key}: ${value}`);
+        if (value==''){
+            alert('Please fill in all the parts')
+            return
+        }
+      }
     Calc();
     display_result();
     window.scrollTo(0, document.body.scrollHeight);
+    next();
 }
 
 function Calc(){

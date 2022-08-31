@@ -77,6 +77,29 @@ hr {
     width: 80%;
 }
 
+div.qn img {
+    margin: 30px 200px;
+    height: 100px;
+    width: auto;
+}
+div.qn img:hover {
+    cursor: pointer;
+    animation: rotate 300ms;
+    transform: rotate(180deg);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(160deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
 div#result h1 {
     margin: 0;
     color: #198754;

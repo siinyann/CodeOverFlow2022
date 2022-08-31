@@ -11,6 +11,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="aboutus.css">
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -21,9 +23,92 @@
   <body>
     <!-- Navigation bar -->
     <nav id="navbar" class="navbar navbar-expand-lg bg-light">
-
+      <nav id="navbar" class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="homepage.html"><img class="logo" src="./images/TransparentLogo.png" 
+            alt="Unable to show logo" /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="info.html">Information</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="donation.html">Donation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="volunteer.html">Volunteer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="CarbonFootprint.html">Calculator</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+            
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="submit" id="buttonzz">
+                <a href="donation.html" id="button2"><strong>DONATE</strong></a>
+            </form> 
+          </div>
+        </div>
+      </nav>
     </nav>
-
+    <div id="bg1">
+      <img src="https://www.in.gov/dnr/images/volunteer/dnr-volunteer_car_2.jpg" alt="" width="100%" height="700px" id="bgbg">
+      <div class="centered">About Us <br><h1 id="hdhd">Who We Are</h1></div>
+    </div>
+    <div id="bodytext">
+      <h1 id="bthead">Save Our World is a global environmental nonprofit working to create a world where people and nature can thrive.</h1>
+      <p id="bthead1">Founded in Singapore through grassroots action in 1951, Save Our World (SOW) has grown to become one of the most effective and wide-reaching environmental organizations in the world. Thanks to more than a million members and the dedicated efforts of our diverse staff and over 400 scientists, we impact conservation in 76 countries and territories: 37 by direct conservation impact and 39 through partners.</p>
+    </div>
+    <div><hr></div>
+    <div id="misvis">
+      <h1 id="mis"><strong><b>Our Mission:</b></strong></h1>
+      <p id="mis1">Conserving the lands and waters on which all life depends.</p>
+      <br><br><h1 id="mis"><strong><b>Our Mission:</b></strong></h1>
+      <p id="mis1">A world where the diversity of life thrives, and people act to conserve nature for its own sake <br>and its ability to fulfill our needs and enrich our lives.
+      </p>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

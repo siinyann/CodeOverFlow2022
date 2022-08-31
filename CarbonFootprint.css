@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    user-select: none;
 }
 
 body{
@@ -15,8 +16,9 @@ h1 {
 }
 
 div#calculator {
+    border: 2px solid #198754;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
     border-radius: 10%;
     margin: 0 auto;
     width: clamp(300px, 60%, 600px);
@@ -34,7 +36,7 @@ div#calculator p {
 }
 
 div#left-arrow{
-    border: solid whitesmoke 1px;
+    border: solid #198754 1px;
     margin: auto 0;
     height:50px;
     width: 50px;
@@ -45,7 +47,7 @@ div#left-arrow{
 }
 
 div#right-arrow{
-    border: solid whitesmoke 1px;
+    border: solid #198754 1px;
     margin: auto 0;
     height:50px;
     width: 50px;
@@ -56,10 +58,17 @@ div#right-arrow{
 }
 
 div#right-arrow:hover, div#left-arrow:hover {
-    background-color: whitesmoke;
+    cursor: pointer;
+    background-color: limegreen;
 }
 
 .arrow {
     height: 40px;
     width: 40px;
+}
+
+h4 {
+    display:block;
+    margin: 30px;
+    font-weight: bold;
 }

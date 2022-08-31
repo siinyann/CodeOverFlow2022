@@ -23,8 +23,9 @@ function display_qn() {
             start.style.display = 'none';
     }
 
-    var calculator = document.getElementById('calculator');
-    calculator.setAttribute('import-html', 'Qns/'+counter+".html");
-    includeHTML();
+    var qn = document.getElementsByClassName('qn');
+    for (var i=0;i<qn.length;i++){
+        qn[i].style.display = 'none';
+    }
+    qn[counter-1].style.display = 'block';
 }
-

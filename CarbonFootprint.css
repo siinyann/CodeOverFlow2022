@@ -4,10 +4,7 @@
 }
 
 body{
-    background-image: url('images/wave_background.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    text-align: center;
 }
 
 
@@ -18,6 +15,7 @@ h1 {
 }
 
 div#calculator {
+    text-align: center;
     padding: 20px;
     border-radius: 10%;
     margin: 0 auto;
@@ -25,6 +23,10 @@ div#calculator {
     aspect-ratio: 16/10;
     background-color: whitesmoke;
     opacity: 50%;
+}
+
+#container {
+    display: none;
 }
 
 div#calculator p {
@@ -60,9 +62,4 @@ div#right-arrow:hover, div#left-arrow:hover {
 .arrow {
     height: 40px;
     width: 40px;
-}
-
-img.logo {
-    width: 75px;
-    height: 75px;
 }

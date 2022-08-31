@@ -1,0 +1,16 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.info-content {
+    margin: 10px;
+}
+
+h1.info-header {
+    text-align: center;
+}
+
+img.logo {
+    width: 75px;
+    height: 75px;
+}

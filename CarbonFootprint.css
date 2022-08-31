@@ -25,6 +25,7 @@ div#calculator {
     aspect-ratio: 16/10;
     background-color: whitesmoke;
     opacity: 50%;
+    box-shadow: 0  15px 60px 0 rgba(0,0,0, .75);
 }
 
 #container {

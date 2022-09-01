@@ -14,6 +14,7 @@
         $('#footer').load('footer.html')
       })
     </script>
+    <script src="volunteer.js"></script>
     <title>Volunteer</title>
   </head>
   <body>
@@ -49,7 +50,7 @@
             <button type="button" class="btn btn-outline-info">
               Sign up now!
             </button>
-            <button type="button" class="btn btn-outline-info">
+            <button type="button" id="1" onclick="more(this)" class="btn btn-outline-info">
               More info
             </button>
           </div>
@@ -62,7 +63,7 @@
             <button type="button" class="btn btn-outline-success">
               Sign up now!
             </button>
-            <button type="button" class="btn btn-outline-success">
+            <button type="button" id="2" onclick="more(this)" class="btn btn-outline-success">
                More info
             </button>
           </div>
@@ -75,7 +76,7 @@
             <button type="button" class="btn btn-outline-primary">
               Sign up now!
             </button>
-            <button type="button" class="btn btn-outline-primary">
+            <button type="button" id="3" onclick="more(this)" class="btn btn-outline-primary">
               More info
             </button>
           </div>
@@ -90,7 +91,9 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <hr id="green"/>
+    
+    <div id="moreDetails" import-html=""></div>
+
     <!-- Footer -->
     <section id="footer" class="footer"></section>
     <script src="script.js"></script>

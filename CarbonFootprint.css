@@ -4,11 +4,6 @@
     user-select: none;
 }
 
-img.navbar-logo {
-    width: 75px;
-    height: 75px;
-}
-
 body{
     text-align: center;
     max-height: 2000px;

@@ -89,7 +89,7 @@ h1.info-header {
     text-shadow:0 0 .5em rgba(255,255,255,.6),
     0 0 .2em rgba(0,0,0,.5),
     0 .3em .2em rgba(0,0,0,.5);
-    color: white;
+    color: #2c3e50;
     font-weight: bold;
     width: clamp(300px, 100%, 800px);
     font-size: clamp(1rem, 9vw, 3rem);
@@ -102,7 +102,6 @@ h1.info-header {
 
 div.info-header img.info-header-image {
     width: 100%;
-    filter: brightness(50%);
 
 }
 
@@ -193,30 +192,12 @@ img#graph {
 
 /* Donation CSS */
 div#donation-box{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 50px;
     border: 1px solid #198754;
     border-radius: 10%;
     background-color: whitesmoke;
     margin: 40px auto;
-    width: clamp(300px, 90%, 600px);
-    aspect-ratio: 4/5;
-}
-
-h1#donation-title {
-    width: min-content;
-    display:block;
-    margin: 50px auto;
-    color:#2c3e50;
-}
-
-@media screen and (max-width:500px){
-    input#exp {
-        width: 70%;
-    }
+    width: 30%;
+    aspect-ratio: 3/4;
 }
 
 /* Volunteer CSS */

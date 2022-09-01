@@ -195,12 +195,35 @@ img#graph {
 
 /* Donation CSS */
 div#donation-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 5%;
     border: 1px solid #198754;
     border-radius: 10%;
     background-color: whitesmoke;
     margin: 40px auto;
-    width: 30%;
-    aspect-ratio: 3/4;
+    width: clamp(300px, 90%, 600px);
+    height: fit-content;
+}
+
+h1#donation-title{
+    margin: 50px auto;
+    width: min-content;
+}
+
+p#donation-des{
+    text-align: center;
+    width: clamp(300px, 90%, 800px);
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 500px){
+    input#exp, #cve{
+        width: 100%;
+    }
+    
 }
 
 /* Volunteer CSS */
@@ -215,12 +238,15 @@ img#volunteer-image-2 {
 
 div#volunteer-caption-1 {
     position: absolute;
-    margin-bottom: 350px;
 }
 
 div#volunteer-caption-2 {
+<<<<<<< Updated upstream
     position: absolute;
     margin-bottom: 280px;
+=======
+  position: absolute;
+>>>>>>> Stashed changes
 }
 
 div#volunteer-container-1 {

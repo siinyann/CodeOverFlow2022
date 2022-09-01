@@ -118,6 +118,10 @@ div.carousel-item img#carousel-image {
     aspect-ratio: 16/8;
 }
 
+.dark:hover img#carousel-image{
+    filter: brightness(50%);
+}
+
 div#space {
     margin: 0 auto;
     width: clamp(300px, 100%, 900px);

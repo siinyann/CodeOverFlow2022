@@ -13,13 +13,16 @@ html,body
     text-align: center;
     color: white;
     pointer-events: none;
-}   
+}
+
 .img1{
     filter: brightness(50%);
 }
+
 nav{
     background-color: inherit;
 }
+
 .img-texts{
     position: absolute;
     top: 20%;
@@ -34,26 +37,31 @@ nav{
 .home-header{
     font-size: 60px;
 }
+
 .img-texts{
     padding-right: 60px;
 }
+
 @media screen and (max-width: 800px) {
     .home-header{
         font-size: 40px;
     }
 }
+
 @media screen and (max-width: 500px) {
     .home-header{
         font-size: 30px;
     }
     
 }
+
 @media screen and (max-width: 450px) {
     .home-header{
         font-size: 23px;
     }
     
 }
+
 @media screen and (max-width: 399px) {
     .home-text{
         font-size: 10px;
@@ -66,6 +74,7 @@ nav{
     z-index: 0;
     margin-top: 50px;
 }
+
 .bg-image{
     z-index: -1;
     right: 0;
@@ -73,9 +82,11 @@ nav{
     max-height: 100vh;
     margin: auto;
 }
+
 .homelinks{
     z-index: 1000;
 }
+
 .container1{
     margin-top: 30px;
     padding-left: px;
@@ -88,22 +99,27 @@ nav{
 body{
     min-height: 3400px;
 }
+
 #natext{
     margin-top: auto;
     margin-bottom: auto;
     padding-left: 15px;
 }
+
 #nature{
     font-size: 50px;
 }
+
 #nature2{
     font-size: 120%;
     margin-top: 20px;
 }
+
 #mission{
     color: #2ea44f;
     margin-bottom: 1px;
 }
+
 .button-3 {
     appearance: none;
     background-color: #2ea44f;
@@ -128,67 +144,76 @@ body{
     vertical-align: middle;
     white-space: nowrap;
     margin-top: 15px;
-  }
+}
   
-  .button-3:focus:not(:focus-visible):not(.focus-visible) {
+.button-3:focus:not(:focus-visible):not(.focus-visible) {
     box-shadow: none;
     outline: none;
-  }
-  
-  .button-3:hover {
+}
+
+.button-3:hover {
     background-color: #2c974b;
-  }
+}
   
-  .button-3:focus {
+.button-3:focus {
     box-shadow: rgba(46, 164, 79, .4) 0 0 0 3px;
     outline: none;
-  }
+}
   
-  .button-3:disabled {
+.button-3:disabled {
     background-color: #94d3a2;
     border-color: rgba(27, 31, 35, .1);
     color: rgba(255, 255, 255, .8);
     cursor: default;
-  }
-  
-  .button-3:active {
+}
+
+.button-3:active {
     background-color: #298e46;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
-  }
+}
 
-  .container2{
+.container2{
     display: grid;
     grid-template-columns: repeat(2, 700px);
     margin-top: 30px;
 }
+
 @media (max-width: 1200px) {
+
     .container2{
         grid-template-columns: repeat(1,700px);
         align-items: center;
     }
+
     .container1{
         grid-template-columns: repeat(1,700px);
         padding-left: 100px;
         padding-right: 30px;
     }
+
     #mission{
         font-size: 15px;
     }
+
     #nature{
         font-size: 20px;
     }
+
     #nature2{
         font-size: 15px;
     }
+
     .container1 div img{
         height: 300px;
     }
     
 }
+
 #button1{
     text-decoration: none;
     color: white;
 }
+
 #button1:hover{
     color: white;
 }
@@ -199,24 +224,30 @@ body{
     padding-left: 15px;
     padding-right: 30px;
 }
+
 .container2{
     margin-top: 70px;
 }
+
 #button2{
     text-decoration: none;
     color: white;
     
 }
+
 form{
     margin-right: 60px;
 }
+
 #buttonzz{
     background-color: rgb(0, 153, 255);
     height: 40px;
 }
+
 #buttonzz:hover{
     background-color: black;
 }
+
 .footer{
     grid-template-columns: repeat(1);
 }

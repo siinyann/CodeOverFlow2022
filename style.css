@@ -236,19 +236,27 @@ img#volunteer-image-2 {
     width: 100%;
 }
 
-div#volunteer-caption-1 {
+/* div#volunteer-caption-1 {
     position: absolute;
 }
 
 div#volunteer-caption-2 {
     position: absolute;
     margin-bottom: 280px;
-}
+} */
 
-div#volunteer-container-1 {
+/* div#volunteer-container-1 {
     margin-top: 15px;
-}
+} */
 
 div#nextbutton {
   position: absolute;
+}
+
+button#volunteer-button-sign-up-1, button#volunteer-button-sign-up-2, button#volunteer-button-sign-up-3 {
+    margin-left: 10px;
+}
+
+button#volunteer-button-more-info-1, button#volunteer-button-more-info-2, button#volunteer-button-more-info-3 {
+    margin-left: 10px;
 }

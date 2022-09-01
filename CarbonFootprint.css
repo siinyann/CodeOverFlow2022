@@ -138,3 +138,8 @@ span {
     color: #198754;
     font-weight: bold;
 }
+
+a#move-to-info{
+    text-decoration: none;
+    color:#198754;
+}

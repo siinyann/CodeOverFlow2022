@@ -9,7 +9,6 @@ body{
     max-height: 2000px;
 }
 
-
 h1 {
     margin: 100px;
     font-weight: bold;
@@ -82,6 +81,7 @@ div.qn img {
     height: 100px;
     width: auto;
 }
+
 div.qn img:hover {
     cursor: pointer;
     animation: rotate 300ms;

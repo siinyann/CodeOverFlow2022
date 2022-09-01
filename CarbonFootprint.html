@@ -4,44 +4,24 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link
-    rel="stylesheet"
-    type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-  />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="CarbonFootprint.css" />
-    <title>Carbon Footprint Calculator</title>
-    <script src="calculator.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
       $(function () {
         $('#footer').load('footer.html')
       })
     </script>
+    <script src="calculator.js"></script>
+    <title>Carbon Footprint Calculator</title>
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav
-      id="navbar"
-      class="navbar navbar-expand-lg navbar-light bg-light"
-    ></nav>
-
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light"></nav>
+    <!-- Content -->
     <h1>Carbon Footprint Calculator</h1>
     <div id="container">
       <div class="d-flex flex-wrap flex-row align-content-sm-around">
@@ -51,23 +31,23 @@
           <div id="calculator">
             <div class="qn">
               <h4 class="text-success">1. What is your monthly electric bill?</h4>
-              <input type="number" class="form-control data" name="Electric">
+              <input type="number" class="form-control data" name="Electric" placeholder="electric">
             </div>
             <div class="qn">
               <h4 class="text-success">2. What is your monthly gas bill?</h4>
-              <input type="number" class="form-control data" name="Gas">
+              <input type="number" class="form-control data" name="Gas" placeholder="gas">
             </div>
             <div class="qn">
               <h4 class="text-success">3. What is your monthly oil bill?</h4>
-              <input type="number" class="form-control data" name="Oil">
+              <input type="number" class="form-control data" name="Oil" placeholder="oil">
             </div>
             <div class="qn">
               <h4 class="text-success">4. What is your monthly mileage of your car?</h4>
-              <input type="number" class="form-control data" name="Mileage">
+              <input type="number" class="form-control data" name="Mileage" placeholder="mileage">
             </div>
             <div class="qn">
               <h4 class="text-success">5. What is the number of flights you've taken in the past years?</h4>
-              <input type="number" class="form-control data" name="Flights">
+              <input type="number" class="form-control data" name="Flights" placeholder="flights">
               <p>Is the number of hours of total flight more than 4hours?</p>
               <label class="form-check-label">Yes
                 <input class="form-check-input" onclick="getValue(this)" type="radio" name="Hours" value="yes">
@@ -98,7 +78,7 @@
               <button type="button" class="btn btn-outline-success" id="showresult" onclick="result()">View your result</button>
             </div>
             <div class="qn">
-              <img src="images/redo.png" onclick="location.reload()">
+              <img src="images/redo.png" alt="Redo" onclick="location.reload()">
               Calculate again?
             </div>              
           </div>
@@ -122,12 +102,7 @@
         </a>
       <hr>
     </div>
-    <button
-      id="start"
-      type="button"
-      onclick="next()"
-      class="btn btn-outline-success"
-    >
+    <button id="start" type="button" onclick="next()" class="btn btn-outline-success">
       Start Calculating
     </button>
     <!-- Footer -->

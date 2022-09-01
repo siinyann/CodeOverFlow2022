@@ -193,12 +193,30 @@ img#graph {
 
 /* Donation CSS */
 div#donation-box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
     border: 1px solid #198754;
     border-radius: 10%;
     background-color: whitesmoke;
     margin: 40px auto;
-    width: 30%;
-    aspect-ratio: 3/4;
+    width: clamp(300px, 90%, 600px);
+    aspect-ratio: 4/5;
+}
+
+h1#donation-title {
+    width: min-content;
+    display:block;
+    margin: 50px auto;
+    color:#2c3e50;
+}
+
+@media screen and (max-width:500px){
+    input#exp {
+        width: 70%;
+    }
 }
 
 /* Volunteer CSS */

@@ -106,7 +106,6 @@ h1.info-header {
 
 div.info-header img.info-header-image {
     width: 100%;
-
 }
 
 div.info-header {
@@ -205,7 +204,6 @@ div#donation-box{
 }
 
 /* Volunteer CSS */
-
 img#volunteer-image-1, img#volunteer-image-3 {
     width: 100%;
     filter: brightness(70%);
@@ -221,13 +219,14 @@ div#volunteer-caption-1 {
 }
 
 div#volunteer-caption-2 {
-  position: absolute;
+    position: absolute;
     margin-bottom: 280px;
 }
 
 div#volunteer-container-1 {
     margin-top: 15px;
 }
+
 div#nextbutton {
   position: absolute;
 }

@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -8,6 +9,7 @@ body{
     text-align: center;
     max-height: 2000px;
 }
+
 
 h1 {
     margin: 100px;
@@ -81,7 +83,6 @@ div.qn img {
     height: 100px;
     width: auto;
 }
-
 div.qn img:hover {
     cursor: pointer;
     animation: rotate 300ms;

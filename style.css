@@ -210,7 +210,7 @@ div#donation-box{
     background-color: whitesmoke;
     margin: 40px auto;
     width: clamp(300px, 90%, 600px);
-    height: max-content;
+    height: fit-content;
 }
 
 h1#donation-title{
@@ -258,6 +258,10 @@ div#quote {
 }
 div#volunteer-container-1{
     width: clamp(300px, 100%, 900px);
+}
+
+div#volunteer-caption > *{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);;
 }
 
 @media screen and (max-width: 950px){

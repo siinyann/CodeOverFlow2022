@@ -1,6 +1,6 @@
 // Place navber on all webpages
 const nav = document.querySelector('#navbar')
-fetch('/navbar.html')
+fetch('/partials/navbar.html')
 .then(res=>res.text())
 .then(data=>{
     nav.innerHTML=data

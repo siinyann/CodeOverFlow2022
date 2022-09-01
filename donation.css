@@ -1,0 +1,8 @@
+div#box{
+    border: 1px solid #198754;
+    border-radius: 10%;
+    background-color: whitesmoke;
+    margin: 40px auto;
+    width: 30%;
+    aspect-ratio: 3/4;
+}

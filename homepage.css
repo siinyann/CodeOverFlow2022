@@ -209,12 +209,12 @@ body{
     
 }
 
-#button1{
+#button1, #button2, #button3 , #button4, #button5 {
     text-decoration: none;
     color: white;
 }
 
-#button1:hover{
+#button1:hover, #button2:hover, #button3:hover, #button4:hover, #button5:hover{
     color: white;
 }
 

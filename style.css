@@ -199,3 +199,26 @@ div#donation-box{
     width: 30%;
     aspect-ratio: 3/4;
 }
+
+/* Volunteer CSS */
+
+img#volunteer-image-1, img#volunteer-image-3 {
+    width: 100%; 
+    filter: brightness(70%);
+}
+
+img#volunteer-image-2 {
+    width: 100%;
+}
+
+div#volunteer-caption-1 {
+    margin-bottom: 27%;
+}
+
+div#volunteer-caption-2 {
+    margin-bottom: 15%;
+}
+
+div#volunteer-container-1 {
+    margin-top: 15px;
+}

@@ -88,7 +88,7 @@ nav{
 }
 
 body{
-    min-height: 3800px;
+    min-height: 3400px;
 }
 #natext{
     margin-top: auto;
@@ -163,7 +163,7 @@ body{
     grid-template-columns: repeat(2, 700px);
     margin-top: 30px;
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .container2{
         grid-template-columns: repeat(1,700px);
         align-items: center;
@@ -218,4 +218,7 @@ form{
 }
 #buttonzz:hover{
     background-color: black;
+}
+.footer{
+    grid-template-columns: repeat(1);
 }

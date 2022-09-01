@@ -6,6 +6,10 @@ img.navbar-logo {
     height: 75px;
 }
 
+button#donateButton {
+    float: right;
+}
+
 /* Footer CSS */
 *{
     margin: 0;

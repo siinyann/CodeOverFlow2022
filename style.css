@@ -6,6 +6,10 @@ img.navbar-logo {
     height: 75px;
 }
 
+button#donateButton {
+    float: right;
+}
+
 /* Footer CSS */
 *{
     margin: 0;
@@ -92,7 +96,7 @@ h1.info-header {
     color: #2c3e50;
     font-weight: bold;
     width: clamp(300px, 100%, 800px);
-    font-size: clamp(1rem, 9vw, 3rem); 
+    font-size: clamp(1rem, 9vw, 3rem);
     text-align: center;
     position: absolute;
     top: 50%;
@@ -198,4 +202,32 @@ div#donation-box{
     margin: 40px auto;
     width: 30%;
     aspect-ratio: 3/4;
+}
+
+/* Volunteer CSS */
+
+img#volunteer-image-1, img#volunteer-image-3 {
+    width: 100%;
+    filter: brightness(70%);
+}
+
+img#volunteer-image-2 {
+    width: 100%;
+}
+
+div#volunteer-caption-1 {
+    position: absolute;
+    margin-bottom: 350px;
+}
+
+div#volunteer-caption-2 {
+  position: absolute;
+    margin-bottom: 280px;
+}
+
+div#volunteer-container-1 {
+    margin-top: 15px;
+}
+div#nextbutton {
+  position: absolute;
 }

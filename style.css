@@ -92,7 +92,7 @@ h1.info-header {
     color: white;
     font-weight: bold;
     width: clamp(300px, 100%, 800px);
-    font-size: clamp(1rem, 9vw, 3rem); 
+    font-size: clamp(1rem, 9vw, 3rem);
     text-align: center;
     position: absolute;
     top: 50%;
@@ -204,7 +204,7 @@ div#donation-box{
 /* Volunteer CSS */
 
 img#volunteer-image-1, img#volunteer-image-3 {
-    width: 100%; 
+    width: 100%;
     filter: brightness(70%);
 }
 
@@ -213,13 +213,18 @@ img#volunteer-image-2 {
 }
 
 div#volunteer-caption-1 {
-    margin-bottom: 27%;
+    position: absolute;
+    margin-bottom: 350px;
 }
 
 div#volunteer-caption-2 {
-    margin-bottom: 15%;
+  position: absolute;
+    margin-bottom: 280px;
 }
 
 div#volunteer-container-1 {
     margin-top: 15px;
+}
+div#nextbutton {
+  position: absolute;
 }

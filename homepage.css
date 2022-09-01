@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 .background-image{
     
     margin-top: -25px;
@@ -13,11 +22,11 @@
 nav{
     background-color: inherit;
 }
-.img-text{
+.img-texts{
     position: absolute;
     top: 20%;
     left: 50%;
-    font-size: 320%;
+    font-size: 300%;
     text-align: right;
     z-index: 1;
     pointer-events: none;
@@ -27,30 +36,59 @@ nav{
 .home-header{
     font-size: 60px;
 }
-.img-text{
+.img-texts{
     padding-right: 60px;
 }
+@media screen and (max-width: 800px) {
+    .home-header{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home-header{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .home-header{
+        font-size: 23px;
+    }
+    
+}
+@media screen and (max-width: 399px) {
+    .home-text{
+        font-size: 10px;
+    }
+    
+}
+
 .home-text{
-    font-size: 40px;
+    font-size: 150%;
     z-index: 0;
     margin-top: 50px;
 }
 .bg-image{
     z-index: -1;
+    right: 0;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
 }
 .homelinks{
     z-index: 1000;
 }
 .container1{
     margin-top: 30px;
-    padding-left: 50px;
+    padding-left: px;
     display: grid;
     grid-template-columns: repeat(2,620px);
     justify-content: center;
 
 }
+
 body{
-    min-height: 6000px;
+    min-height: 3800px;
 }
 #natext{
     margin-top: auto;
@@ -61,7 +99,7 @@ body{
     font-size: 50px;
 }
 #nature2{
-    font-size: 20px;
+    font-size: 120%;
     margin-top: 20px;
 }
 #mission{
@@ -124,6 +162,30 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 700px);
     margin-top: 30px;
+}
+@media (max-width: 1000px) {
+    .container2{
+        grid-template-columns: repeat(1,700px);
+        align-items: center;
+    }
+    .container1{
+        grid-template-columns: repeat(1,700px);
+        padding-left: 100px;
+        padding-right: 30px;
+    }
+    #mission{
+        font-size: 15px;
+    }
+    #nature{
+        font-size: 20px;
+    }
+    #nature2{
+        font-size: 15px;
+    }
+    .container1 div img{
+        height: 300px;
+    }
+    
 }
 #button1{
     text-decoration: none;

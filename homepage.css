@@ -4,11 +4,9 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
 }
 
 .background-image{
-    
     margin-top: -25px;
     z-index: -2;
     position: relative;

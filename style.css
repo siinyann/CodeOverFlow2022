@@ -210,7 +210,7 @@ div#donation-box{
     background-color: whitesmoke;
     margin: 40px auto;
     width: clamp(300px, 90%, 600px);
-    height: fit-content;
+    height: max-content;
 }
 
 h1#donation-title{
